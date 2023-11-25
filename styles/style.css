@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -40,7 +41,6 @@ ol {
 .content {
   margin: auto;
   width: 1140px;
-  margin-top: 132px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -200,7 +200,7 @@ fieldset {
 }
 
 .search-form__pseudo-checkbox {
-  position: relative;
+  display: flex;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
@@ -261,14 +261,12 @@ fieldset {
   border: 1px solid #fff;
 }
 
-input[type="checkbox"]:checked + span::before {
+input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
   content: "";
-  position: absolute;
+  margin: auto;
   width: 15px;
   height: 15px;
   background-color: #fff;
-  top: 1px;
-  left: 1px;
 }
 
 .search-form__checkbox-list .search-form__label:hover,
