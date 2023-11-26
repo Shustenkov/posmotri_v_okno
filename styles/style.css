@@ -253,6 +253,10 @@ fieldset {
   border: 1px solid #fff;
 }
 
+.content__card-link:active {
+  background-color: #545050;
+}
+
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
   content: "";
   margin: auto;
